@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("./assets/fonts/Roboto.css");
+@import url("./assets/fonts/MaterialIcon.css");
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
