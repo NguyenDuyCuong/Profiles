@@ -1,3 +1,7 @@
 @import 'roboto.css';
 @import 'material-icons.css';
 @import 'material.min.css';
+body {
+  font-family: Roboto;
+  font-size: 14px;
+}
