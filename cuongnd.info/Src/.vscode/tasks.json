@@ -11,7 +11,11 @@
     {
       "label": "public",
       "type": "shell",
-      "command": "xcopy /y /s .\\* E:\\LocalWeb\\cuongnd.info"
+      "command": "xcopy /y /s .\\* E:\\LocalWeb\\cuongnd.info",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
