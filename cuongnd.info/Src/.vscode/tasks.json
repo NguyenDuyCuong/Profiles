@@ -1,0 +1,17 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build style",
+      "type": "shell",
+      "command": "stylus -w assets/stylus/main.styl -o assets/css/main.css"
+    },
+    {
+      "label": "public",
+      "type": "shell",
+      "command": "xcopy /y /s .\\* E:\\LocalWeb\\cuongnd.info"
+    }
+  ]
+}
