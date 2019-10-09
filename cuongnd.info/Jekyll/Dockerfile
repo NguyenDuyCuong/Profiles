@@ -1,11 +1,8 @@
-FROM Ubuntu
+FROM ubuntu
 RUN apt-get update
-RUN apt-get install ruby-full build-essential zlib1g-dev
-RUN echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-RUN echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
-RUN echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
-RUN source ~/.bashrc
+RUN apt-get install -y ruby-full build-essential zlib1g-dev && apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN gem install jekyll bundler
+
 CMD ['jekyll', 'new', 'cuongndinfo']
 CMD ['cd', 'cuongndinfo']
 CMD ['bundle', 'exec', 'jekyll', 'serve']

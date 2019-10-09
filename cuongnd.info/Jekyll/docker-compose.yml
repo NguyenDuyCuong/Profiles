@@ -1,0 +1,11 @@
+version: "3"
+services:
+  cuongndinfo:
+    image: jekyll/jekyll:latest
+    command: jekyll serve
+    volumes:
+      - /var/www/cuongnd.info:/srv/jekyll
+      - /var/www/cuongnd.info/vendor/bundle:/usr/local/bundle
+    ports:
+      - 3000:3000
+      -   80:4000
