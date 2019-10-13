@@ -40,7 +40,7 @@ You can insert any code you want with the syntax highlight like below
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
- 
+
 \begin{document}
 
 This is an example of \LaTeX document, but you can use other language like C++, Python, Matlab,...
@@ -86,7 +86,7 @@ plt.show()
 </div>
 <div class="col s12 l6" markdown="1">
 
-... or something like this, but on the right! 
+... or something like this, but on the right!
 
 **Oh, I'm a very small dog <img class="img-inline" src="{{ site.baseurl }}/images/posts/dog-inline.png" />  and I'm inline text.**
 
@@ -136,7 +136,7 @@ You even can embed **R/Python** code environment inside a post like this
 
 ## Play with content
 
-<div class="thi-columns" markdown="1">
+<div class="cuong-columns" markdown="1">
 - [How to use NoteTheme?]({{site.baseurl}}/how-to-use-notetheme)
 - [Welcome to NoteTheme]({{site.baseurl}}/welcome-to-notetheme)
 - [How to install NoteTheme]({{site.baseurl}}/how-to-install-notetheme)
@@ -176,14 +176,14 @@ $$
 \begin{cases}
 x + 3y - z &= 5 \\
 2x +3z &= 7 \\
-y - 4z &= 8 
+y - 4z &= 8
 \end{cases}
 \end{align}
 $$
 
 You can even call $\eqref{eq1}$ again another place if you want.
 
-<div class="thi-box" markdown="1">
+<div class="cuong-box" markdown="1">
 <div class="box-title" markdown="1">
 **For a Theorem? No problem!**
 </div>
@@ -200,7 +200,7 @@ You have a very beautiful box for describing a theorem or definition.
 If you need something more, just let me know in the comment below this post!
 </p>
 
-<div  class="thi-step">
+<div  class="cuong-step">
 <div class="step">
 <div class="step-number">
 </div>

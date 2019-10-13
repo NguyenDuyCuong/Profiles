@@ -87,7 +87,7 @@ by using
 - If you wanna add tag `{{"{% this "}}%}`, use `{% raw %}{{"{% this "}}%}{% endraw %}`.
 - If you like this `{{"{{ this "}}}}`, use `{% raw %}{{"{{ this "}}}}{% endraw %}`.
 - **The rule**: use `{% raw %}{{"{% endraw %}` before the key-word and end with `{% raw %}"}}{% endraw %}` before the end of key-word.
-- **An easier way**: use `{{ "{% raw " }}%}` and `{{ "{% endraw " }}%}` around the key-word. These two commands are also used for a block of codes, 
+- **An easier way**: use `{{ "{% raw " }}%}` and `{{ "{% endraw " }}%}` around the key-word. These two commands are also used for a block of codes,
 
 	~~~
 	~~~ {{ "{% raw " }}%}{% raw %}{% for %}
@@ -120,7 +120,7 @@ You can also insert a keyboard like this <kbd>Ctrl</kbd> + <kbd>B</kbd>, just us
 		<code data-type="solution">
 			# Create a variable a, equal to 5
 			a <- 5
-	
+
 			# Print out a
 			print(a)
 		</code>
@@ -182,7 +182,7 @@ You can also insert a keyboard like this <kbd>Ctrl</kbd> + <kbd>B</kbd>, just us
 ![](/link/to/figure/){:.w-500 .no-border}
 {% endraw %} ~~~
 
-<div class="thi-colums" markdown="1">
+<div class="cuong-colums" markdown="1">
 - `no-border`: remove the border around figure
 - `w-300`: reduce the size of image to maximum `300px` (if the screen's maximum size is `500px`, the figure's size will be `100%` the size of the screen). You can change the number `3` in `300` by other numbers `2,4,5,6,7,8,10` or something like `w-150`.
 </div>
@@ -259,7 +259,7 @@ Use the class `notdisplay`,
 Put the list inside a `<div>` tag like,
 
 {% highlight html %}
-<div class="thi-columns" markdown="1">
+<div class="cuong-columns" markdown="1">
 - item 1
 - item 2
 - item 3
@@ -271,7 +271,7 @@ Put the list inside a `<div>` tag like,
 
 Results,
 
-<div class="thi-columns" markdown="1">
+<div class="cuong-columns" markdown="1">
 - item 1
 - item 2
 - item 3
@@ -340,7 +340,7 @@ You can change the value of `5` and `6` by other numbers depending on the ratio 
 
 If you want something like this,
 
-<div  class="thi-step">
+<div  class="cuong-step">
 <div class="step">
 <div class="step-number">
 </div>
@@ -364,7 +364,7 @@ Content in step 2
 Use below codes,
 
 ~~~ html
-<div  class="thi-step">
+<div  class="cuong-step">
 <div class="step">
 <div class="step-number"></div>
 <div class="step-content" markdown="1">
@@ -388,7 +388,7 @@ Content in step 2
 ## Mathematical expressions
 
 - Inline math, use `$math-expression$`
-- Block of math, use `$$math block$$` or 
+- Block of math, use `$$math block$$` or
 
 	~~~ latex
 	$$
@@ -416,7 +416,7 @@ Content in step 2
 	x^n + y^n = z^n
 	\end{align}
 	$$
-	
+
 	Call again equation $\eqref{eq1}$.
 	~~~
 
@@ -436,7 +436,7 @@ Content in step 2
 	$$
 	x^n + y^n = z^n \tag{1}\label{eq1}
 	$$
-	
+
 	Call again equation $\eqref{eq1}$.
 	~~~
 
@@ -451,7 +451,7 @@ Content in step 2
 Use these lines of code
 
 {% highlight html %}
-<div class="thi-box" markdown="1">
+<div class="cuong-box" markdown="1">
 <div class="box-title" markdown="1">
 **Title**
 </div>
@@ -466,7 +466,7 @@ Content
 
 which give
 
-<div class="thi-box" markdown="1">
+<div class="cuong-box" markdown="1">
 <div class="box-title" markdown="1">
 **Title**
 </div>
@@ -611,7 +611,7 @@ Content
 On the front matter of each post, use this
 
 ~~~
-categories: [maths, python] 
+categories: [maths, python]
 tags: [algebra, function, theorem]
 ~~~
 
@@ -629,7 +629,7 @@ tags: [algebra, function, theorem]
 
 Already-defined categories:
 
-<div class="thi-columns">
+<div class="cuong-columns">
 <ul>
 {% for cat in site.data.categories %}
 <li><code class="highlighter-rouge">{{ cat.slug }}</code> : <a href="/{{cat.slug}}">{{ cat.name }}</a></li>
@@ -638,11 +638,11 @@ Already-defined categories:
 </div>
 
 <p>
-Already-defined tags: 
+Already-defined tags:
 {% for tag in site.tags %}
 <code class="highlighter-rouge">{{ tag[0] }}</code>
 {% if forloop.last == false %}
-, 
+,
 {% else %}
 .
 {% endif %}

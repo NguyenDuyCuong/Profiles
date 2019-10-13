@@ -29,15 +29,15 @@ css: ["index.css"]
 
   <!-- <h2 class="h2-title">List of notes</h2> -->
 
-  <div class="thi-columns">
+  <div class="cuong-columns">
     <ul class="tag-post">
-    {% for post in paginator.posts %}
+      {% for post in paginator.posts %}
       <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
         <li>
           {{ post.title }} <small class="post-date">{{post.date | date: "%d/%m/%Y"}}</small>
         </li>
       </a>
-    {% endfor %}
+      {% endfor %}
     </ul>
   </div>
 
@@ -47,22 +47,22 @@ css: ["index.css"]
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
         <a href="{{site.baseurl}}/">
-        {% else %}
-        <a href="{{site.baseurl}}/page{{paginator.previous_page}}">
-        {% endif %}
-        {% else %}
-        <a href="#!">
-        {% endif %}
-          <i class="material-icons">chevron_left</i>
-        </a>
+          {% else %}
+          <a href="{{site.baseurl}}/page{{paginator.previous_page}}">
+            {% endif %}
+            {% else %}
+            <a href="#!">
+              {% endif %}
+              <i class="material-icons">chevron_left</i>
+            </a>
       </li>
       {% if paginator.page == 1 %}
       <li class="active teal">
         <a href="#!">1</a>
-      {% else %}
+        {% else %}
       <li class="waves-effect">
         <a href="{{site.baseurl}}/">1</a>
-      {% endif %}
+        {% endif %}
       </li>
       {% for count in (2..paginator.total_pages) %}
       {% if count == paginator.page %}
@@ -74,11 +74,11 @@ css: ["index.css"]
       <li class="{% unless paginator.next_page %}disabled{% else %}waves-effect{% endunless %}">
         {% if paginator.next_page %}
         <a href="{{site.baseurl}}/page{{paginator.next_page}}">
-        {% else %}
-        <a href="#!">
-        {% endif %}
-          <i class="material-icons">chevron_right</i>
-        </a>
+          {% else %}
+          <a href="#!">
+            {% endif %}
+            <i class="material-icons">chevron_right</i>
+          </a>
       </li>
     </ul>
   </div>
@@ -87,12 +87,13 @@ css: ["index.css"]
     <h2 class="h2-title">Tags</h2>
     <div class="tag-list">
       {% for tag in site.tags %}
-        {% capture test %}{{tag[0] | slice: 0}}{% endcapture %}
-        {% capture testup %}{{tag[0] | slice: 0 | upcase}}{% endcapture %}
-        <a class="tag-chip" href="{{ site.baseurl }}/tags#{{tag[0] | slugify}}{% if test == testup %}_cap{% endif %}"><div class="chip z-depth-1">{{tag[0]}}</div></a>
+      {% capture test %}{{tag[0] | slice: 0}}{% endcapture %}
+      {% capture testup %}{{tag[0] | slice: 0 | upcase}}{% endcapture %}
+      <a class="tag-chip" href="{{ site.baseurl }}/tags#{{tag[0] | slugify}}{% if test == testup %}_cap{% endif %}">
+        <div class="chip z-depth-1">{{tag[0]}}</div>
+      </a>
       {% endfor %}
     </div>
   </div>
-  
-</div>
 
+</div>

@@ -6,18 +6,20 @@
 </div>
 <div id="slide-out" class="side-nav fixed">
   <div>
-    <div class="userView thi-userView">
+    <div class="userView cuong-userView">
       <div class="background"></div>
-        <a href="{{ site.baseurl }}/">
-          <img style="display:inherit;" class="circle z-depth-2" src="{{ site.baseurl }}{{ site.user.avatar }}">
-        </a>
+      <a href="{{ site.baseurl }}/">
+        <img style="display:inherit;" class="circle z-depth-2" src="{{ site.baseurl }}{{ site.user.avatar }}">
+      </a>
       <span style="font-size: larger;" class="white-text name">{{ site.user.name }}</span>
-      <span class="white-text email"><a style="color: #bdbdbd;" href="{{ site.user.website | prepend: 'http://'' }}">{{ site.user.website }}</a></span>
+      <span class="white-text email"><a style="color: #bdbdbd;"
+          href="{{ site.user.website | prepend: 'http://'' }}">{{ site.user.website }}</a></span>
     </div>
   </div>
   <div style="padding: 10px;">
     <form action="{{ site.baseurl }}/search" method="get">
-      <input class="search-sidebar" type="search" name="q" {% if include.add_id %}id="search-input"{% endif %} placeholder="search something?" autofocus>
+      <input class="search-sidebar" type="search" name="q" {% if include.add_id %}id="search-input" {% endif %}
+        placeholder="search something?" autofocus>
       <input type="submit" value="Search" style="display: none;">
     </form>
   </div>

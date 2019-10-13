@@ -1,5 +1,5 @@
-// tip 
-.thi-tip{
+// tip
+.cuong-tip{
 	background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #468847;
@@ -12,7 +12,7 @@
 }
 
 // warning
-.thi-warning{
+.cuong-warning{
 	background-color: #f2dede;
   border-color: #eed3d7;
   color: #b94a48;
@@ -24,16 +24,16 @@
   margin: 1rem 0;
 }
 
-.thi-tip a, .thi-warning a{
+.cuong-tip a, .cuong-warning a{
 	text-decoration: underline;
 }
 
-li >.thi-tip, li>.thi-warning{
+li >.cuong-tip, li>.cuong-warning{
 	margin: 0.5rem 0;
 }
 
 // thi box
-.thi-box{
+.cuong-box{
 	margin: 2rem 0;
   overflow: auto;
   .box-title{

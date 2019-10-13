@@ -10,14 +10,14 @@ favicon: "/assets/res/favicon.png" # site's favicon (icon left side of your page
 
 # MatJek specific configurations
 user:
-  name: "CuongND"
+  name: "Nguyễn Duy Cường"
   email: "cuongnd.ami@gmail.com"
   website: "cuongnd.info"
   avatar: "/assets/res/user.png"
   github: "NguyenDuyCuong"
 google_tracking_id: ""
 google_site_verification: ""
-disqus_shortname: this-site
+disqus_shortname: cuongnd-info
 
 # Build settings
 markdown: kramdown

@@ -1,5 +1,5 @@
-.thi-step{
-  counter-reset: thi-step;
+.cuong-step{
+  counter-reset: cuong-step;
   margin: 2rem 0;
   &:first-child{
     margin-top: 1rem;
@@ -12,14 +12,14 @@
     .step-number{
       width: 2rem;
       &:before{
-        counter-increment: thi-step;
-        content: counter(thi-step);    
+        counter-increment: cuong-step;
+        content: counter(cuong-step);
         color: #999;
         font-weight: 500;
         font-size: 1.7rem;
       }
     }
-  
+
     .step-content{
       width: calc(100% - 2rem);
       border-left: 3px solid #009688;

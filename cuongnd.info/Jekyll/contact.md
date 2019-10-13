@@ -1,10 +1,19 @@
 ---
 layout: page
-title: Contact Thi
+title: Liên hệ
 css: ["contact.css"]
 comment: 1
 ---
 
-You can contact me at [{{site.user.email}}](mailto:{{site.user.email}}).
+Thông tin trên trang [cuongnd.info](http://cuongnd.info) được thu thập từ nhiều nguồn trên mạng và được biên soạn lại nên khó tránh khỏi một số sai xót. Bạn có thể liên hệ với tôi để điều chỉnh hoặc yêu cầu bổ sung theo các cách dưới đây:
 
-PS. If you have time, welcome to [my site](https://dinhanhthi.com).
+Số 24/4, ngõ 93,
+Hoàng Quốc Việt,
+Cầu giấy,
+Hà Nội
+
+Phone: 09 79 908 950
+
+E-mail: [{{site.user.email}}](mailto:{{site.user.email}}).
+
+PS. If you have time, welcome to [HR Tools site](http://hr-tools.vn).

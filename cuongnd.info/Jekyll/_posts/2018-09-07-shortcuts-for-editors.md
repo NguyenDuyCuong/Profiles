@@ -39,7 +39,7 @@ There are some already-defined components on NoteTheme that you could use (If yo
 - If you wanna add tag `{{"{% this "}}%}`, use `{% raw %}{{"{% this "}}%}{% endraw %}`.
 - If you like this `{{"{{ this "}}}}`, use `{% raw %}{{"{{ this "}}}}{% endraw %}`.
 - **The rule**: use `{% raw %}{{"{% endraw %}` before the key-word and end with `{% raw %}"}}{% endraw %}` before the end of key-word.
-- **An easier way**: use `{{ "{% raw " }}%}` and `{{ "{% endraw " }}%}` around the key-word. These two commands are also used for a block of codes, 
+- **An easier way**: use `{{ "{% raw " }}%}` and `{{ "{% endraw " }}%}` around the key-word. These two commands are also used for a block of codes,
 
   ~~~
   ~~~ {{ "{% raw " }}%}{% raw %}{% for %}
@@ -92,7 +92,7 @@ Content
 - Info
 
   ~~~ html
-  <p markdown="1" class="thi-tip">
+  <p markdown="1" class="cuong-tip">
   <i class="material-icons mat-icon">info</i>
   content
   </p>
@@ -101,7 +101,7 @@ Content
 - Error
 
   ~~~ html
-  <p markdown="1" class="thi-warning">
+  <p markdown="1" class="cuong-warning">
   <i class="material-icons mat-icon">error</i>
   content
   </p>
@@ -128,7 +128,7 @@ Content
 ### Theorem style
 
 ~~~ html
-<div class="thi-box" markdown="1">
+<div class="cuong-box" markdown="1">
 <div class="box-title" markdown="1">
 **Title**
 </div>
@@ -157,7 +157,7 @@ Content
 ### Columns for lists
 
 ~~~{% raw %} html
-<div class="thi-columns" markdown="1">
+<div class="cuong-columns" markdown="1">
 - item 1
 - item 2
 - item 3
@@ -208,7 +208,7 @@ Download
 ### Steps
 
 ~~~ html
-<div  class="thi-step">
+<div  class="cuong-step">
 <div class="step">
 <div class="step-number"></div>
 <div class="step-content" markdown="1">
