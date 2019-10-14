@@ -143,7 +143,7 @@ You even can embed **R/Python** code environment inside a post like this
 - [Math2IT facebook fanpage](https://facebook.com/Math2IT)
 - [Math2IT official website](http://math2it.com)
 - [Math2IT group on facebook](https://www.facebook.com/groups/math2it/)
-- [Đinh Anh Thi's personal website](http://dinhanhthi.com)
+- [Đinh Anh Thi's personal website](http://nguyenduycuong.com)
 </div>
 
 It will automatically become 1 colum if you see this post on a small screen device.
@@ -205,7 +205,7 @@ If you need something more, just let me know in the comment below this post!
 <div class="step-number">
 </div>
 <div class="step-content" markdown="1">
-Download [this theme](https://github.com/dinhanhthi/NoteTheme).
+Download [this theme](https://github.com/nguyenduycuong/NoteTheme).
 </div>
 </div>
 
@@ -228,4 +228,4 @@ Follow [this link]({{site.baseurl}}/how-to-use-notetheme) to make an awesome pos
 
 Just use <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy and paste shortcodes defined in NoteTheme.
 
-{% include more.html content="[Thank you and let's start!](https://dinhanhthi.github.io/NoteTheme/welcome-to-notetheme)." %}
+{% include more.html content="[Thank you and let's start!](https://nguyenduycuong.github.io/NoteTheme/welcome-to-notetheme)." %}

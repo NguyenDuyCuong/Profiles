@@ -2,3 +2,7 @@
   name: NoteTheme
 - slug: it
   name: Information Technology
+- slug: data_science
+  name: Data Science
+- slug: ml
+  name: Machine Learning

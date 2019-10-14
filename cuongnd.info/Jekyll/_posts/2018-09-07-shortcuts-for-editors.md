@@ -1,6 +1,6 @@
 ---
 title: Shortcuts for editors
-categories: [it]
+categories: [notetheme]
 tags: [jekyll,notetheme]
 maths: 1
 toc: 1

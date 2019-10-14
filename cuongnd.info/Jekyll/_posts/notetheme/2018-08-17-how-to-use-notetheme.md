@@ -621,7 +621,7 @@ tags: [algebra, function, theorem]
 2. Open file `_data\categories.yml` and add the new category you want
 	- `slug`: the id of this category, it will appear in the url, like
 		~~~
-		https://dinhanhthi.github.io/NoteTheme/categories#notetheme
+		https://nguyenduycuong.github.io/NoteTheme/categories#notetheme
 		~~~
 	- `name` : the name of this catefory, it will appear on the site, like `NoteTheme`
 
