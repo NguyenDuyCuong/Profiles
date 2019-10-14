@@ -184,3 +184,6 @@ P(both_girls|tuesday_girl) =  0.4770844027278727
 {% endraw %} ~~~
 
 Xác suất tính ra tương đối sát với con số ta tính bằng định lý Bayes ở trên.
+
+
+Nguồn <a href="https://1upnote.me/post/2018/11/ds-ml-naive-bayes/">https://1upnote.me/post/2018/11/ds-ml-naive-bayes/</a>
