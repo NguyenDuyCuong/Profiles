@@ -134,7 +134,7 @@ $$
 \begin{align*}
 P(B) &=               P(B,A)+P(B,A_{1}) \\
 P(B) &=       P(B|A)P(A) + P(B|A_1)P(A_1) \\
-P(B) &=   \frac{13}{49} \times \frac{1}{4} \times \frac{1}{7} \times \frac{1}{2} \\
+P(B) &=   \frac{13}{49} \times \frac{1}{4} + \frac{1}{7} \times \frac{1}{2} \\
 P(B) &=           \frac{27}{196} \\
 \end{align*}
 $$
