@@ -6,3 +6,7 @@
   name: Data Science
 - slug: ml
   name: Machine Learning
+- slug: classification
+  name: Classification
+- slug: supervised_learning
+  name: Supervised Learning

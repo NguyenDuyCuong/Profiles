@@ -6,7 +6,7 @@ js: ["morphext.min.js", "about.js"]
 ---
 
 # Nguyễn Duy Cường
-Senior deverloper, Team leader.
+Coder.
 
 <div id="webaddress">
     <a href="cuongnd.ami@gmail.com">cuongnd.ami@gmail.com</a>
