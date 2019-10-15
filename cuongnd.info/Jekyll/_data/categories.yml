@@ -5,6 +5,8 @@
 - slug: data_science
   name: Data Science
 - slug: ml
-  name: Machine Learning
-- slug: xstk
-  name: Xác suất thống kê
+- slug: classification
+  name: Classification
+- slug: supervised_learning
+  name: Supervised Learning- slug: xstk
+  name: X�c su?t th?ng k�
