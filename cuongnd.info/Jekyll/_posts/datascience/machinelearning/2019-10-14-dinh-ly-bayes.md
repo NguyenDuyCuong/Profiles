@@ -1,6 +1,6 @@
 ---
 title: Định lý Bayes (Bayes' Theorem)
-categories: [data_science, ml]
+categories: [data_science, ml, xstk]
 tags: [Bayes,Theorem]
 maths: 1
 toc: 1
@@ -56,8 +56,8 @@ Hiểu rằng:
 Do gia đình có 2 đứa trẻ nên sẽ có thể xảy ra 4 khả năng: (trai, trai), (gái, gái), (gái, trai), (trai, gái).
 
 Ký hiệu |   Sự kiện |   Xác suất
-B  |   Ít nhất 1 đứa trẻ là con gái    |   $$ \dfrac {3}{4} $$
-A  |   Cả 2 đứa trẻ đều là con gái |   $$ \dfrac {1}{4} $$
+$$ B $$ |   Ít nhất 1 đứa trẻ là con gái    |   $$ \dfrac {3}{4} $$
+$$ A $$ |   Cả 2 đứa trẻ đều là con gái |   $$ \dfrac {1}{4} $$
 
 Do nếu xảy ra A thì đương nhiên sẽ xảy ra B nên ta có: $$ P(A,B) = P(A) = 1 / 4 $$
 
@@ -97,7 +97,7 @@ Hiểu rằng:
 - Xác suất để một đứa trẻ sinh vào một ngày nhất định trong tuần là $$ 1 \Big/ 7 $$.
 - Giới tính của đứa trẻ và ngày sinh của nó là 2 sự kiện không liên quan đến nhau.
 
-### Giải
+### Lời giải 1
 
 Thoạt nhìn ta dễ tưởng giới tính và ngày sinh của đứa trẻ là 2 sự kiện không liên quan đến nhau, nên ta sẽ thu được kết quả như ví dụ 1. Tưởng vậy mà không phải vậy…
 
@@ -117,13 +117,13 @@ Ta ký hiệu các sự kiện như sau:
 $$ P(B∣A) $$ được hiểu là xác suất ít nhất 1 đứa trẻ là con gái sinh ra vào thứ 3 nếu biết trước 2 đứa trẻ là con gái.
 Ta sẽ tính xác suất phần bù $$ P(\neg{B}∣A) $$ là xác suất để không có đứa trẻ nào sinh ra vào thứ 3.
 
-$$ P(\neg{B}|A) = P(\neg{C})P(\neg{C}) = \frac{6}{7} \times \frac{6}{7} = \frac{36}{49}) $$
+$$ P(\neg{B}|A) = P(\neg{C})P(\neg{C}) = \frac{6}{7} \times \frac{6}{7} = \frac{36}{49} $$
 
 Vậy ta có
 
-$$ P(A|B)=1-P(\neg{B}|A)=\frac{13}{49} $$
+$$ P(B|A)=1-P(\neg{B}|A)=\frac{13}{49} $$
 
-$$P(B)$$ là xác suất sự ít nhất 1 đứa trẻ là con gái sinh ra vào thứ 3.
+$$P(B)$$ là xác suất sự kiện có ít nhất 1 đứa trẻ là con gái sinh ra vào thứ 3.
 Sự kiện này bao gồm 2 khả năng:
 * Cả 2 đứa trẻ đều là con gái $$(A)$$
 * Chỉ 1 đứa trẻ là con gái $$(A_1)$$
@@ -143,11 +143,41 @@ Thay vào định lý Bayes, ta tính được
 
 $$ P(A|B)=\frac{P(B|A)P(A)}{P(B)}=\frac{\frac{13}{49} \times \frac{1}{4} }{\frac{27}{196}} = \frac{13}{27} \approx 0.481 $$
 
+### Lời giải 2
+
+Với một số người có hiểu biết về xác suất sẽ đưa ra câu trả lời là $$ 1 / 3 $$. Bởi vì bài toán không nói rằng người đàn ông này đã có 1 đứa con và đang mong đợi có thêm 1 đứa nữa. Mà bài toán nói rõ là người này có 2 đứa con. Khi đó 2 đứa trẻ sẽ là:
+
+| 1. Trai + Trai | 2. Trai + Gái | 3. Gái + Trai | 4. Gái + Gái |
+
+Khi người này có 1 bé gái thì các khả năng tiếp theo sẽ là 2 hoặc 3 hoặc 4. Nhưng chỉ có 4 là kết quả 2 bé gái. Vậy xác suất sẽ là $$ 1 / 3 $$. Nói theo cách khác thì, thứ tự là một thành phần làm thay đổi giá trị xác suất.
+
+Vậy khi đứa trẻ được sinh ra vào thứ 3 thì sẽ ra sao? Có phải xác suất vẫn là $$ 1/3 $$. Câu trả lời đơn giản là đếm các cặp giới tính và thứ trong tuần.
+
+$$
+    \frac{\text{Số cặp kết hợp sao cho có 2 bé gái và ít nhất 1 bé sinh vào thứ 3}}{\text{Số cặp kết hợp sao cho có ít nhất 1 bé gái sinh vào thứ 3}} = \frac{13}{27}
+$$
+
+Dưới đây là minh họa rất trực quan:
+
+<div class="row d-flex" markdown="1">
+<div class="col s12 l12" markdown="1">
+
+![]({{ site.baseurl }}/images/posts/datascience/machinelearning/tuesday_child_grid.png){:.w-300 .no-border}
+
+</div>
+</div>
+
+Hình trên thể hiện từng cặp bé trai/bé gái cùng với thứ trong tuần. Màu xanh đại diện cho hai bé trai sinh vào thứ 3 (tương ứng với bé gái - do không có hình nên dùng tạm). Màu vàng là bé trai( cũng giống với trường hợp bé gái) sinh vào thứ 3. Màu đò là các trường hợp sinh vào ngày còn lại. Do đó câu trả lời sẽ là:
+
+$$
+    \frac {\text{Xanh}} {\text{Xanh + Vàng}} = \frac{13}{27}
+$$
+
 ## Kiểm tra
 
 Ta dùng một đoạn code Python nho nhỏ để kiểm tra thử kết quả vừa tính được.
 
-~~~  {% raw %}
+~~~  python
 import random
 
 def random_kid():
@@ -173,17 +203,23 @@ for _ in range(total):
 print("both_girls = ", both_girls)
 print("tuesday_girl = ", tuesday_girl)
 print("P(both_girls|tuesday_girl) = ", both_girls / tuesday_girl)
-{% endraw %} ~~~
+~~~
 
 Đoạn code trên thực hiện random 100K dữ liệu.
 
-~~~  {% raw %}
+
+<div class="terminal">
 both_girls =  6506
+<br />
 tuesday_girl =  13637
+<br />
 P(both_girls|tuesday_girl) =  0.4770844027278727
-{% endraw %} ~~~
+</div>
+
 
 Xác suất tính ra tương đối sát với con số ta tính bằng định lý Bayes ở trên.
 
 
-Nguồn <a href="https://1upnote.me/post/2018/11/ds-ml-naive-bayes/">https://1upnote.me/post/2018/11/ds-ml-naive-bayes/</a>
+{% include more.html content="[Nguồn 1upnote.me](https://1upnote.me/post/2018/11/ds-ml-naive-bayes/)." %}
+
+{% include more.html content="[Nguồn Decision Science News](http://www.decisionsciencenews.com/2010/05/28/tuesdays-child-is-full-of-probability-puzzles/)." %}
