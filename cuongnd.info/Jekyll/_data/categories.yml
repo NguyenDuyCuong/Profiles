@@ -8,5 +8,8 @@
 - slug: classification
   name: Classification
 - slug: supervised_learning
-  name: Supervised Learning- slug: xstk
-  name: X�c su?t th?ng k�
+  name: Supervised Learning
+- slug: xstk
+  name: Xác Suất Thống Kê
+- slug: pcl
+  name: Principal Component Analysis
