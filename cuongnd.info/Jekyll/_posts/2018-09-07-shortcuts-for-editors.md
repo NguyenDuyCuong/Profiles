@@ -6,6 +6,7 @@ maths: 1
 toc: 1
 snippet: 1
 date: 2018-10-08
+excerpt: This post is about "Shortcuts for editors"
 ---
 
 This post is only for editors, please read other posts.

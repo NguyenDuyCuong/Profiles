@@ -25,13 +25,16 @@ highlighter: rouge
 permalink: /:title
 
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-archives
   - jekyll-redirect-from
+  - redcarpet
+  - jekyll-gist
+  - pygments.rb
 
 exclude:
   - Gemfile

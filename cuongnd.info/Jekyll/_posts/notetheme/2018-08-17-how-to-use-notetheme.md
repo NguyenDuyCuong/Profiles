@@ -6,6 +6,7 @@ maths: 1
 toc: 1
 comment: 1
 datacamp: 1
+excerpt: This post is about "How to use NoteTheme"
 ---
 
 In this tutorial, I suppose that you have already [installed NoteTheme]({{ site.baseurl }}/how-to-install-notetheme), just follow the ones you need and don't forget to leave a comment below.

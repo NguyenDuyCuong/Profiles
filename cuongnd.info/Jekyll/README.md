@@ -29,7 +29,8 @@ I have modified a lot from Matjek so that we have this theme for **the only purp
 
 ## How to use it?
 
-- Follow [this instruction](http://nguyenduycuong.github.io/NoteTheme/how-to-use-notetheme) carefully.
+- Use Docker:
+    > docker run --rm --volume="${PWD}:/srv/jekyll" -it jekyll/builder jekyll build
 
 
 ## Contact & support
