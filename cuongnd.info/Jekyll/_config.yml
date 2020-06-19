@@ -1,7 +1,7 @@
 title: Quick Note
 description: Take notes.
 baseurl: ""
-url: "http://cuongnd.info"
+url: "http://blog.cuongnd.info"
 repository: nguyenduycuong/Profiles
 paginate: 28
 
@@ -12,12 +12,12 @@ favicon: "/assets/res/favicon.png" # site's favicon (icon left side of your page
 user:
   name: "Nguyễn Duy Cường"
   email: "cuongnd.ami@gmail.com"
-  website: "cuongnd.info"
+  website: "blog.cuongnd.info"
   avatar: "/assets/res/user.png"
   github: "NguyenDuyCuong"
 google_tracking_id: ""
 google_site_verification: ""
-disqus_shortname: cuongnd-info
+disqus_shortname: blog-cuongnd-info
 
 # Build settings
 markdown: kramdown

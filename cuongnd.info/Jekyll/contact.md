@@ -5,7 +5,7 @@ css: ["contact.css"]
 comment: 1
 ---
 
-Thông tin trên trang [cuongnd.info](http://cuongnd.info) được thu thập từ nhiều nguồn trên mạng và được biên soạn lại nên khó tránh khỏi một số sai xót. Bạn có thể liên hệ với tôi để điều chỉnh hoặc yêu cầu bổ sung theo các cách dưới đây:
+Thông tin trên trang [blog.cuongnd.info](http://blog.cuongnd.info) được thu thập từ nhiều nguồn trên mạng và được biên soạn lại nên khó tránh khỏi một số sai xót. Bạn có thể liên hệ với tôi để điều chỉnh hoặc yêu cầu bổ sung theo các cách dưới đây:
 
 Số 24/4, ngõ 93,
 Hoàng Quốc Việt,
